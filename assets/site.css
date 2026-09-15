@@ -1,6 +1,8 @@
 /* ===== 사이트 전용 레이아웃 (app.css 토큰 사용) ===== */
 a.tab{text-decoration:none;display:inline-flex;align-items:center;gap:6px}
 a.brand{text-decoration:none;color:var(--ink)}
+a.chip{text-decoration:none;display:inline-flex;align-items:center}
+.term{padding:0 .12em;border-radius:5px}
 .back::before{content:"";width:8px;height:8px;border-left:2.5px solid currentColor;border-bottom:2.5px solid currentColor;transform:rotate(45deg);margin-right:4px}
 @media (hover:hover){ .back:hover{color:var(--accent-deep)} }
 a.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
