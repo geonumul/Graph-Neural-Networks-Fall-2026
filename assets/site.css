@@ -249,3 +249,8 @@ body.inking .totop{display:none}
   .thumbgrid{grid-template-columns:repeat(2,1fr)}
   .termbar .btnrow{width:100%}
 }
+@media (max-width:760px){
+  .inkbar .ig-opt .sb,.inkbar .ig-opt .sep{display:none}
+  .thumbgrid{grid-template-columns:repeat(2,1fr)}
+  .termbar .btnrow{width:100%}
+}
