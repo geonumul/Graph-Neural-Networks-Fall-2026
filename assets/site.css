@@ -212,6 +212,55 @@ body.inking .totop{display:none}
 .thumb.has img{border-color:var(--accent)}
 .thumb.has{color:var(--accent-deep)}
 
+/* 직접 짜 보기 */
+.prhow ol{margin:8px 0 6px;padding-left:22px;line-height:1.75}
+.prhow p{margin:6px 0 0}
+.prlist{display:grid;gap:8px;margin-top:16px}
+.pritem{display:flex;align-items:center;gap:12px;min-height:58px;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);text-decoration:none;color:var(--ink)}
+.pritem .prn{flex:none;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--surface-2);color:var(--sub);font-weight:800}
+.pritem.done .prn{background:var(--ok-soft);color:var(--ok)}
+.pritem .prt{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.pritem .prt small{font-size:13px;color:var(--sub)}
+.pritem .prs{font-size:13px;font-weight:800;color:var(--ok)}
+.prwrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:14px;align-items:start;margin-top:4px}
+.prtask .prh{font-size:22px;line-height:1.35;margin:0 0 10px}
+.prbadge{display:inline-block;font-size:13px;font-weight:800;background:var(--ok-soft);color:var(--ok);border-radius:999px;padding:3px 10px;vertical-align:middle}
+.prgoal{font-size:17px;line-height:1.7}
+.prexp{margin:12px 0 4px;padding-left:20px;font-size:15.5px;line-height:1.75}
+.prexp li+li{margin-top:4px}
+.prtask code,.prhint code,.prhow code,.pyres code,.colabhow code{background:var(--surface-2);border-radius:6px;padding:1px 6px;font-size:.92em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.pl{font-size:12.5px;font-weight:750;color:var(--sub);margin:12px 0 5px}
+pre.noselect{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.prhint{margin-top:8px;padding:10px 12px;border-radius:var(--r-sm);background:var(--amber-soft);font-size:15px;line-height:1.65}
+.prsrc{font-size:13px;margin-top:10px}
+.edhead{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-weight:750;margin-bottom:8px}
+.edhead .muted{font-weight:600;font-size:13px}
+.edbox{display:flex;border:1.5px solid var(--line-2);border-radius:var(--r-md);overflow:hidden;background:var(--paper)}
+.edbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.gutter{flex:none;margin:0;padding:12px 8px 12px 10px;min-width:38px;text-align:right;color:var(--sub);background:var(--surface-2);font:16px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:hidden;user-select:none;-webkit-user-select:none;white-space:pre}
+.gutter .err{color:var(--no);font-weight:800}
+textarea.ed{flex:1;min-width:0;min-height:240px;height:42svh;margin:0;border:0;outline:0;resize:vertical;padding:12px;background:transparent;color:var(--ink);font:16px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;tab-size:4;white-space:pre;overflow:auto}
+.keybar{display:flex;gap:5px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.keybar::-webkit-scrollbar{display:none}
+.keybar button{flex:none;min-width:42px;height:42px;padding:0 10px;border-radius:9px;background:var(--surface-2);color:var(--ink);font:650 16px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.prbtns{margin-top:10px}
+.pyoutbox{display:grid;gap:8px;margin-top:12px}
+.pyoutbox .pl{margin-top:0}
+.pyout2 pre{margin:0;padding:10px 12px;border-radius:var(--r-sm);background:#15161F;color:#E9E9F2;font:14.5px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-word;max-height:280px;overflow:auto}
+.pyres{padding:12px 14px;border-radius:var(--r-md);background:var(--surface-2);font-size:15.5px;line-height:1.65}
+.pyres > b{display:block;margin-bottom:2px}
+.pyres.bad{background:var(--no-soft)}
+.pyres.bad > b{color:var(--no)}
+.pyres.good{background:var(--ok-soft)}
+.pyres.good > b{color:var(--ok);font-size:19px}
+.pyres small{display:block;margin-top:6px;color:var(--sub);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word-break:break-all}
+.pyres pre.code{margin:8px 0}
+.pyres .btnrow{margin-top:10px}
+.colabhow{margin:4px 0 12px;padding-left:22px;line-height:1.8}
+.prtests{margin-top:12px}
+.prtests summary{cursor:pointer;font-weight:700;min-height:40px;display:flex;align-items:center}
+@media (max-width:900px){ .prwrap{grid-template-columns:1fr} }
+
 /* 설정 */
 .state{font-size:13px;font-weight:800;border-radius:999px;padding:4px 12px}
 .state.ok{background:var(--ok-soft);color:var(--ok)}
